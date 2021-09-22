@@ -40,6 +40,7 @@ main {
 @media only screen and (min-width: 768px) {
   main {
     flex-direction: row;
+    justify-content: space-around;
   }
 }
 footer {
