@@ -22,11 +22,11 @@ function App() {
       <ImageSearch />
       {isLoading 
         ? <h1 className="text-6xl text-center mx-auto mt-32">Loading...</h1> 
-        : images.map(image => (
-        <div className="grid grid-cols-3 gap4">
-          <ImageCard key={image.id} image={image}/>
-        </div>
-      ))}
+        : <div className="grid grid-cols-3 gap4">
+          {images.map(image => (
+          <ImageCard key={image.id} image={image} />
+          ))}
+      </div>}
     </div>
   );
 }
